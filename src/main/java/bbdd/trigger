@@ -1,0 +1,12 @@
+create or replace trigger altaexistencia
+before insert 
+on lin_alb
+for each row
+declare
+valor varchar2(100);
+begin
+insert into existencias values (:new.cod_alm,:new.cod_art,:new.f_caducidad,0,0,0);
+exception
+when dup_val_on_index then
+valor:= 'Hala Madrid';
+end;

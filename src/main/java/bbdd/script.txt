@@ -1,0 +1,16 @@
+drop table usu;
+create table usu
+(
+ usuario varchar(15) primary key,
+ pwd  varchar(15),
+ tipo     varchar(1),
+ email  varchar(50),
+ pregunta varchar(50),
+ recordatorio varchar(25),
+ accesosfallidos number(1) check(accesosfallidos in(1,2,3,0)),
+ bloqueado varchar(1) check(bloqueado in('S','N')),
+ activo varchar(1) check(activo in('S','N'))
+);
+insert into usu values('superangel','super','A','angel@rmadrid.es','¿Tu equipo mega fhasion?','el madrid',0,'N','S');
+insert into usu values('puf','puf','P','puf@psoe.es','¿Tu equipo Supermega fhasion?','SuperReal',0,'N','S');
+commit;
