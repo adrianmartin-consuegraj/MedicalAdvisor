@@ -11,4 +11,5 @@ then I've used the session to store all the important information related to the
 <br>
 ![img](https://img.shields.io/badge/version-3.2-blue)
 
-<!-- I need to translate the variables and the comments into English -->
+<!-- translate the variables and the comments into English -->
+<!-- deploy the web app -->
