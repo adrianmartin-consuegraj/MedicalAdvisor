@@ -13,3 +13,5 @@ then I've used the session to store all the important information related to the
 
 <!-- translate the variables and the comments into English -->
 <!-- deploy the web app -->
+
+    → it still needs to be translated into English
